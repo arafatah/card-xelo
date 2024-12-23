@@ -408,59 +408,63 @@ processCards.forEach((card, index) => {
 //   ScrollTrigger.refresh();
 // });
 
-
+// Background Wrappers Animation
 gsap.to(".wp-bg-wrapper-1", {
-  scale: 1,
+  scale: 2,
+  transformOrigin: "center",
   scrollTrigger: {
-    start: "top center",
+    start: "top 80%",
     end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 
 gsap.to(".wp-bg-wrapper-2", {
-  scale: 1.5,
+  scale: 2,
+  transformOrigin: "center",
   scrollTrigger: {
-    start: "top center",
+    start: "top 80%",
     end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 
 gsap.to(".wp-bg-wrapper-3", {
   scale: 2,
+  transformOrigin: "center",
   scrollTrigger: {
-    start: "top center",
+    start: "top 80%",
     end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 
-////////
+// Cards Animation
+
 gsap.to(".work-process-position-1", {
-  y: -425,
+  y: -325,
   rotate: 10,
   scrollTrigger: {
-    start: "top 70%",
+    start: "top 90%",
     // end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 gsap.to(".work-process-position-2", {
-  y: -525,
+  y: -425,
   rotate: -10,
   scrollTrigger: {
-    start: "top 70%",
+    start: "top 90%",
     // end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 gsap.to(".work-process-position-3", {
-  y: -625,
-  rotate: 10,
+  y: -525,
+  rotate: 5,
   scrollTrigger: {
-    start: "top 70%",
+    start: "top 90%",
     // end: "bottom top",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
